@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danganronpa OniPedia</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="menufijo.css">
+	<style>
+		body {
+			background-color: rgb(2, 10, 27);
+		}
+	</style>
+</head>
+
+<body>
+	<img src="images/blanco.png" class="fondo">
+
+	BIENVENIDA
+    <h1 class="bienvenida anim">Bienvenido a OniPedia</h1>
+	<h1 class="info anim">Lugar donde tendras informacion de Oni sobre Danganronpa</h1>
+	<h1 class="resumen">Podras ver opiniones de Oni. Como ships, ejecuciones, asesinatos, juegos, etc. Todo detallado y fuentes sacados por "Oni".</h1>
+	<h1 class= "eleccion">Eliga alguna opcion</h1>
+
+	MAIN OPTIONS
+	<img src="images/main.png" class="main">
+
+	MENU FIJO
+	<nav>
+		<ul>
+		  <li><a href="#">Menu</a></li>
+		  <li><a href="acerca.de.html">Acerca de</a></li>
+		  <li><a href="creditos.html">Creditos</a></li>
+		  <img src="images/Monooni.png" style="position: absolute; top: 0px; left: 1240px; height: 50px;">
+		</ul>
+	  </nav>
+
+	  <script>
+		window.onload = function() {
+		  document.querySelector('.bienvenida').classList.add('active');
+		  document.querySelector('.info').classList.add('active');
+		};
+	  </script>
+
+<div class="button-group">
+	<div class="button">
+		<img src="opciones/b1.jpg">
+		<a href="opciones/ships/ships.html">
+	        <p>SHIPS</p>
+		</a>
+	</div>
+	<div class="button">
+		<img src="opciones/b1.jpg" href="opciones/personajes/personajes.html">
+	  <p>NAGITO</p>
+	</div>
+	<div class="button">
+		<img src="opciones/b1.jpg">
+	  <p>PERSONAJES</p>
+	</div>
+	<div class="button">
+		<img src="opciones/b1.jpg">
+	  <p>ASESINATOS</p>
+	</div>
+	<div class="button">
+		<img src="opciones/b1.jpg">
+	  <p>JUEGOS</p>
+	</div>
+	<div class="button">
+		<img src="opciones/b1.jpg">
+	  <p>EJECUCIONES</p>
+	</div>
+  </div>
+
+</body>
+
+</html>

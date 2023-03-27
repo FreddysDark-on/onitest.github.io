@@ -1,0 +1,147 @@
+.fondo {
+    width: 1300px; /* Define el ancho de la imagen */
+    height: 400px; /* Define la altura de la imagen */
+    border: 2px solid black; /* Define un borde para la imagen */
+    margin: 10px;
+    position: absolute;
+    left: 6px;
+  }
+
+.bienvenida {
+    color: #008cff;
+	position: absolute; top: 430px; left: 500px;
+}
+
+.anim {
+  opacity: 0;
+    transform: translateY(-30px);
+    transition: all 1s ease-in-out;
+}
+
+.anim.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info {
+  color: #ffffff;
+position: absolute; top: 480px; left: 250px;
+}
+
+.resumen {
+  color: #ffffff;
+position: absolute; top: 540px; left: 50px;
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.eleccion {
+  color: #008cff;
+  position: absolute; top: 640px; left: 330px;
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 800px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  z-index: 0;
+}
+
+.button img {
+  max-width: 50%;
+  height: auto;
+}
+
+.button p {
+  margin-top: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: initial;
+}
+
+
+
+
+.freddys {
+  color: #ff0000;
+  position: absolute; top: 70px; left: 750px;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.credit {
+  color: #ffa7a7;
+  position: absolute; top: 140px; left: 700px;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.credit2 {
+  color: #ffffff;
+  position: absolute; top: 200px; left: 600px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.gpt {
+  color: #c7ffbf;
+  position: absolute; top: 500px; left: 850px;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.credit3 {
+  color: #edffec;
+  position: absolute; top: 670px; left: 810px;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.credit4 {
+  color: #ffffff;
+  position: absolute; top: 720px; left: 600px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.videoanim {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-10px, 0); }
+  40% { transform: translate(10px, 0); }
+  60% { transform: translate(-10px, 0); }
+  80% { transform: translate(10px, 0); }
+  100% { transform: translate(0, 0); }
+}
